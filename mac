@@ -1,0 +1,64 @@
+#!/usr/bin/env zsh
+
+echo "Installing Simple Ruby Version Management: rbenv ..."
+  curl -L https://raw.github.com/fungibleclouds/laptop/master/rbenv.sh | zsh
+  source ~/.zshenv
+
+echo "Installing ruby-build ..."
+  curl -L https://raw.github.com/fungibleclouds/laptop/master/ruby-build.sh | zsh
+  source ~/.zshenv
+
+echo "Installing apps ..."
+  curl -L https://raw.github.com/fungibleclouds/laptop/master/preparation.sh | zsh
+
+echo "Installing Homebrew, a good OS X package manager ..."
+  ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
+  brew update
+
+echo "Put Homebrew location earlier in PATH ..."
+  echo "
+# recommended by brew doctor
+export PATH='/usr/local/bin:$PATH'" >> ~/.zshenv
+  source ~/.zshenv
+
+echo "Installing Postgres, a good open source relational database ..."
+  brew install postgres --no-python
+
+echo "Installing ack, a good way to search through files ..."
+  brew install ack
+
+echo "Installing tmux, a good way to save project state and switch between projects ..."
+  brew install tmux
+
+echo "Installing ImageMagick, good for cropping and re-sizing images ..."
+  brew install imagemagick
+
+echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
+  brew install qt
+
+echo "Installing rdoc to support rails..."
+  gem install rdoc
+
+echo "Installing Rails to write and run web applications ..."
+  gem install rails --no-rdoc --no-ri
+
+echo "Installing the Heroku gem to interact with the http://heroku.com API ..."
+  gem install heroku --no-rdoc --no-ri
+
+echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
+  heroku plugins:install git://github.com/ddollar/heroku-config.git
+
+echo "Installing the pg gem to talk to Postgres databases ..."
+  gem install pg --no-rdoc --no-ri
+
+echo "Installing the foreman gem for serving your Rails apps in development mode ..."
+  gem install foreman --no-rdoc --no-ri
+
+echo "Installing chef ..."
+  gem install chef --no-rdoc --no-ri
+
+echo "Installing vagrant ..."
+  gem install vagrant --no-rdoc --no-ri
+
+
+#zsh < <(curl -s https://raw.github.com/thoughtbot/laptop/master/heroku)
