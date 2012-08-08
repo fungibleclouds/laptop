@@ -75,6 +75,9 @@ hdiutil mount -quiet /Volumes/store/install/TextWrangler_4.0.1.dmg && cp -R /Vol
 #Thinkorswim
 #hdiutil mount -quiet /Volumes/store/install/
 
+#VirtualBox
+hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.1.18-78361-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.mpkg -target /
+
 #webex
 #hdiutil mount -quiet /Volumes/store/install/webexmc_intel.dmg && sudo installer -pkg /Volumes/WebEx\ Meeting\ Center.pkg\ 1/WebEx\ Meeting\ Center.pkg -target /
 
