@@ -20,7 +20,7 @@ Use a compiler from the [Command Line Tools for XCode](https://developer.apple.c
 
 Make sure to install command line tools before you begin
 
-    open /Volumes/store/install/xcode44cltools_10_86938106a.dmg && sudo installer -pkg /Volumes/Command\ Line\ Tools\ \(Mountain\ Lion\)/Command\ Line\ Tools\ \(Mountain\ Lion\).mpkg -target /
+    open /Volumes/store/install/command_line_tools_for_xcode_os_x_mountain_lion_aug_2012.dmg && sudo installer -pkg /Volumes/Command\ Line\ Tools\ \(Mountain\ Lion\)/Command\ Line\ Tools\ \(Mountain\ Lion\).mpkg -target /
 
 Although optional, its a good idea to have a key pair ready.
 

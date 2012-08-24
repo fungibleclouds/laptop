@@ -2,7 +2,7 @@
 unzip -qq /Volumes/store/install/1Password-3.8.20.zip -d /Applications
 
 #Alfred
-hdiutil mount -quiet /Volumes/store/install/alfred_1.3_249.dmg && cp -R /Volumes/Alfred.app/Alfred.app /Applications/
+hdiutil mount -quiet /Volumes/store/install/alfred_1.3.1_261.dmg && cp -R /Volumes/Alfred.app/Alfred.app /Applications/
 
 #Aperture
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.0Trial.dmg && sudo installer -pkg /Volumes/Aperture\ Trial\ 3.0/ApertureTrial.mpkg -target /
