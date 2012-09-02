@@ -85,4 +85,4 @@ hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.1.18-78361-OSX.dmg && s
 #open /Volumes/store/install/xcode44cltools_10_86938106a.dmg && sudo installer -pkg /Volumes/Command\ Line\ Tools\ \(Mountain\ Lion\)/Command\ Line\ Tools\ \(Mountain\ Lion\).mpkg -target /
 
 #XQuartz
-hdiutil mount -quiet /Volumes/store/install/XQuartz-2.7.2.dmg && sudo installer -pkg /Volumes/XQuartz-2.7.2/XQuartz.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/XQuartz-2.7.3.dmg && sudo installer -pkg /Volumes/XQuartz-2.7.3/XQuartz.pkg -target /
