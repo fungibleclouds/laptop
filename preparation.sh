@@ -7,7 +7,7 @@ hdiutil mount -quiet /Volumes/store/install/alfred_1.3.1_261.dmg && cp -R /Volum
 #Aperture
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.0Trial.dmg && sudo installer -pkg /Volumes/Aperture\ Trial\ 3.0/ApertureTrial.mpkg -target /
 #Aperture Update
-hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.3.2Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.3.2/Aperture3.3.2Update.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.4/Aperture3.4Update.pkg -target /
 
 #Dropbox
 hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.4.12.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
@@ -44,15 +44,19 @@ hdiutil mount /Volumes/store/install/Keka-1.0.3-intel.dmg && cp -R /Volumes/Keka
 hdiutil mount -quiet /Volumes/store/install/Microsoft\ Office\ 2011\ v14.0.0.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011/Office\ Installer.mpkg -target /
 
 #Microsoft Lync
-hdiutil mount -quiet /Volumes/store/install/Office\ 2011\ 14.0.0\ Final\ for\ Mac\ \(Volume\ Licensed\)/mu_lync_for_mac_2011_mac_dvd_737519.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync/Lync\ Installer.mpkg -target /
+hdiutil mount -quiet /Volumes/store/install/mu_lync_for_mac_2011_mac_dvd_737519.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync/Lync\ Installer.mpkg -target /
+#Microsoft Lync Update
+hdiutil mount -quiet /Volumes/store/install/Lync14.0.2_ALL.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync/Lync\ Installer.pkg -target /
 #Microsoft Update 1410
-hdiutil mount -quiet /Volumes/store/install/Office\ 2011\ 14.0.0\ Final\ for\ Mac\ \(Volume\ Licensed\)/Office2011-1410UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.0\ Update/Office\ 2011\ 14.1.0\ Update.mpkg -target /
+hdiutil mount -quiet /Volumes/store/install/Office2011-1410UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.0\ Update/Office\ 2011\ 14.1.0\ Update.mpkg -target /
 #Microsoft Update 1414
-hdiutil mount -quiet /Volumes/store/install/Office\ 2011\ 14.0.0\ Final\ for\ Mac\ \(Volume\ Licensed\)/Office2011-1414UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.4\ Update/Office\ 2011\ 14.1.4\ Update.mpkg -target /
+#hdiutil mount -quiet /Volumes/store/install/Office2011-1414UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.4\ Update/Office\ 2011\ 14.1.4\ Update.mpkg -target /
 #Microsoft Update 1422
-hdiutil mount -quiet /Volumes/store/install/Office\ 2011\ 14.0.0\ Final\ for\ Mac\ \(Volume\ Licensed\)/Office2011-1422UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.2\ Update/Office\ 2011\ 14.2.2\ Update.pkg -target /
+#hdiutil mount -quiet /Volumes/store/install/Office2011-1422UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.2\ Update/Office\ 2011\ 14.2.2\ Update.pkg -target /
 #Microsoft Update 1423
-hdiutil mount -quiet /Volumes/store/install/Office\ 2011\ 14.0.0\ Final\ for\ Mac\ \(Volume\ Licensed\)/Office2011-1423UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.3\ Update/Office\ 2011\ 14.2.3\ Update.pkg -target /
+#hdiutil mount -quiet /Volumes/store/install/Office2011-1423UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.3\ Update/Office\ 2011\ 14.2.3\ Update.pkg -target /
+#Microsoft Update 1424
+hdiutil mount -quiet /Volumes/store/install/Office2011-1424UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.4\ Update/Office\ 2011\ 14.2.4\ Update.pkg -target /
 
 #OmniGraffle Pro 5
 #hdiutil mount -quiet /Volumes/store/install/OmniGraffle\ Pro\ 5.4/OmniGrafflePro-5.4.dmg && cp -R /Volumes/OmniGrafflePro/OmniGraffle\ Professional\ 5.app /Applications/
@@ -72,11 +76,14 @@ unzip -qq /Volumes/store/install/SkyDrive.zip  -d /Applications/
 #TextWrangler
 hdiutil mount -quiet /Volumes/store/install/TextWrangler_4.0.1.dmg && cp -R /Volumes/TextWrangler\ 4.0.1/TextWrangler.app /Applications/
 
+#TextMate
+tar -xzf /Volumes/store/install/TextMate_r9290.tbz && mv TextMate.app /Applications/
+
 #Thinkorswim
 #hdiutil mount -quiet /Volumes/store/install/
 
 #VirtualBox
-hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.1.18-78361-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.mpkg -target /
+hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.2.0-80737-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
 
 #webex
 #hdiutil mount -quiet /Volumes/store/install/webexmc_intel.dmg && sudo installer -pkg /Volumes/WebEx\ Meeting\ Center.pkg\ 1/WebEx\ Meeting\ Center.pkg -target /
