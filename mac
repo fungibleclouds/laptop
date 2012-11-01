@@ -45,6 +45,9 @@ echo "Installing Rails to write and run web applications ..."
 echo "Installing the Heroku gem to interact with the http://heroku.com API ..."
   gem install heroku --no-rdoc --no-ri
 
+echo "rbenv rehash"
+  rbenv rehash
+
 echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
   heroku plugins:install git://github.com/ddollar/heroku-config.git
 
