@@ -8,6 +8,8 @@ hdiutil mount -quiet /Volumes/store/install/alfred_1.3.1_261.dmg && cp -R /Volum
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.0Trial.dmg && sudo installer -pkg /Volumes/Aperture\ Trial\ 3.0/ApertureTrial.mpkg -target /
 #Aperture Update
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.4/Aperture3.4Update.pkg -target /
+#Aperture Update
+hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4.1Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.4.1/Aperture3.4.1Update.pkg -target /
 
 #Dropbox
 hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.4.12.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
