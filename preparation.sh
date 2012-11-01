@@ -48,15 +48,15 @@ hdiutil mount -quiet /Volumes/store/install/Microsoft\ Office\ 2011\ v14.0.0.dmg
 #Microsoft Lync
 hdiutil mount -quiet /Volumes/store/install/mu_lync_for_mac_2011_mac_dvd_737519.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync/Lync\ Installer.mpkg -target /
 #Microsoft Lync Update
-hdiutil mount -quiet /Volumes/store/install/Lync14.0.2_ALL.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync/Lync\ Installer.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/Lync14.0.2_ALL.dmg && sudo installer -pkg /Volumes/Microsoft\ Lync\ 1/Lync\ Installer.pkg -target /
 #Microsoft Update 1410
 hdiutil mount -quiet /Volumes/store/install/Office2011-1410UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.0\ Update/Office\ 2011\ 14.1.0\ Update.mpkg -target /
 #Microsoft Update 1414
-#hdiutil mount -quiet /Volumes/store/install/Office2011-1414UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.4\ Update/Office\ 2011\ 14.1.4\ Update.mpkg -target /
+hdiutil mount -quiet /Volumes/store/install/Office2011-1414UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.1.4\ Update/Office\ 2011\ 14.1.4\ Update.mpkg -target /
 #Microsoft Update 1422
-#hdiutil mount -quiet /Volumes/store/install/Office2011-1422UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.2\ Update/Office\ 2011\ 14.2.2\ Update.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/Office2011-1422UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.2\ Update/Office\ 2011\ 14.2.2\ Update.pkg -target /
 #Microsoft Update 1423
-#hdiutil mount -quiet /Volumes/store/install/Office2011-1423UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.3\ Update/Office\ 2011\ 14.2.3\ Update.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/Office2011-1423UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.3\ Update/Office\ 2011\ 14.2.3\ Update.pkg -target /
 #Microsoft Update 1424
 hdiutil mount -quiet /Volumes/store/install/Office2011-1424UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.4\ Update/Office\ 2011\ 14.2.4\ Update.pkg -target /
 
