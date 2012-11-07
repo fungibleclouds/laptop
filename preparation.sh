@@ -87,7 +87,7 @@ tar -xzf /Volumes/store/install/TextMate_r9290.tbz && mv TextMate.app /Applicati
 #hdiutil mount -quiet /Volumes/store/install/
 
 #VirtualBox
-hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.2.0-80737-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
+hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.2.4-81684-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
 
 #webex
 #hdiutil mount -quiet /Volumes/store/install/webexmc_intel.dmg && sudo installer -pkg /Volumes/WebEx\ Meeting\ Center.pkg\ 1/WebEx\ Meeting\ Center.pkg -target /
