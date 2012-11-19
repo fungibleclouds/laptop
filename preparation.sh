@@ -74,7 +74,8 @@ hdiutil mount -quiet /Volumes/store/install/Office2011-1424UpdateEN.dmg && sudo 
 #hdiutil mount -quiet /Volumes/store/install/ScreenFlow\ 3.0.4.dmg && cp -R /Volumes/ScreenFlow/ScreenFlow.app  /Applications/
  
 #SkyDrive
-unzip -qq /Volumes/store/install/SkyDrive.zip  -d /Applications/
+#unzip -qq /Volumes/store/install/SkyDrive.zip  -d /Applications/
+sudo installer -pkg /Volumes/store/install/SkyDrive.pkg -target /
 
 #SuperDuper
 #hdiutil mount -quiet /Volumes/store/install/SuperDuper/SuperDuper\!.dmg && cp -R /Volumes/SuperDuper\!/SuperDuper\!.app /Applications/
@@ -90,6 +91,9 @@ tar -xzf /Volumes/store/install/TextMate_r9290.tbz && mv TextMate.app /Applicati
 
 #VirtualBox
 hdiutil mount -quiet /Volumes/store/install/VirtualBox-4.2.4-81684-OSX.dmg && sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
+
+#VMware
+hdiutil mount -quiet /Volumes/store/software/VMware\ 5/VMware-Fusion-5.0.2-900491-light.dmg && cp -R /Volumes/VMware\ Fusion/VMware\ Fusion.app /Applications
 
 #webex
 #hdiutil mount -quiet /Volumes/store/install/webexmc_intel.dmg && sudo installer -pkg /Volumes/WebEx\ Meeting\ Center.pkg\ 1/WebEx\ Meeting\ Center.pkg -target /
