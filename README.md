@@ -30,7 +30,7 @@ Although optional, its a good idea to have a key pair ready.
     echo "Copying public key to clipboard. Paste it into your Github account ..."
     [[ -f ~/.ssh/id_dsa.pub ]] && cat ~/.ssh/id_dsa.pub | pbcopy
     
-    open https://github.com/account/ssh
+Click [here](https://github.com/account/ssh) to add your keys to github.
 
 
 Install
