@@ -92,4 +92,6 @@ chflags nohidden ~/Library
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 for app in "Address Book" "Contacts" "iCal" "Calendar" "Dock" "Finder" "Mail" "Safari" "iTunes" "SystemUIServer" "Terminal" "Twitter"; do killall "$app" > /dev/null 2>&1; done
 
-wget appendthis2zshenv >> ~/.zshenv
+wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshenv
+cat appendthis2zshenv >> ~/.zshenv
+rm appendthis2zshenv
