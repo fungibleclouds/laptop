@@ -25,7 +25,7 @@ Make sure to install command line tools before you begin
 Although optional, its a good idea to have a key pair ready.
 
     echo "Checking for SSH key, generating one if it doesn't exist ..."
-    [[ -f ~/.ssh/id_dsa.pub ]] || ssh-keygen -t dsa -C lvnilesh@yahoo.com
+    [[ -f ~/.ssh/id_dsa.pub ]] || ssh-keygen -t dsa -C nilesh@londhe.com
 
     echo "Copying public key to clipboard. Paste it into your Github account ..."
     [[ -f ~/.ssh/id_dsa.pub ]] && cat ~/.ssh/id_dsa.pub | pbcopy
