@@ -69,6 +69,9 @@ hdiutil mount -quiet /Volumes/store/install/Office2011-1423UpdateEN.dmg && sudo 
 #Microsoft Update 1425
 hdiutil mount -quiet /Volumes/store/install/Office2011-1425UpdateEN.dmg && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.2.5\ Update/Office\ 2011\ 14.2.5\ Update.pkg -target /
 
+#Microsoft Update 1430
+hdiutil mount -quiet /Volumes/store/install/Office2011-1430UpdateEN.dmg  && sudo installer -pkg /Volumes/Microsoft\ Office\ 2011\ 14.3.0\ Update/Office\ 2011\ 14.3.0\ Update.pkg -target /
+
 #OmniGraffle Pro 5
 #hdiutil mount -quiet /Volumes/store/install/OmniGraffle\ Pro\ 5.4/OmniGrafflePro-5.4.2.dmg && cp -R /Volumes/OmniGrafflePro/OmniGraffle\ Professional\ 5.app /Applications/
  
