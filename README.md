@@ -36,7 +36,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 echo "Installing Homebrew, a good OS X package manager ..."
 
-    ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
+    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
     brew update
     brew install rbenv
     brew install ruby-build
