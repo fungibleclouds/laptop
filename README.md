@@ -54,8 +54,3 @@ Install
 Run the script:
 
     zsh < <(curl -s https://raw.github.com/fungibleclouds/laptop/master/mac)
-
-
-
-
-It takes less than 10 minutes to install on my machine YMMV.

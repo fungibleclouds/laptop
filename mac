@@ -18,32 +18,11 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
 echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
   brew install qt
 
-echo "Installing rdoc to support rails..."
-  gem install rdoc
-
-echo "Installing Rails to write and run web applications ..."
-  gem install rails --no-rdoc --no-ri
-
 echo "Installing Heroku toolbelt to interact with the http://heroku.com API ..."
   brew install wget
   wget http://assets.heroku.com/heroku-toolbelt/heroku-toolbelt.pkg
   sudo installer -pkg  ./heroku-toolbelt.pkg -target /
   rm -rf heroku-toolbelt.pkg
-
-echo "rbenv rehash"
-  rbenv rehash
-
-echo "Installing the pg gem to talk to Postgres databases ..."
-  gem install pg --no-rdoc --no-ri
-
-echo "Installing the foreman gem for serving your Rails apps in development mode ..."
-  gem install foreman --no-rdoc --no-ri
-
-echo "Installing chef ..."
-  gem install chef --no-rdoc --no-ri
-
-echo "Installing vagrant ..."
-  gem install vagrant --no-rdoc --no-ri
 
 git config --global alias.co checkout
 git config --global alias.br branch  
@@ -53,8 +32,9 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # git lg
 # git lg -p
 
-
-#zsh < <(curl -s https://raw.github.com/thoughtbot/laptop/master/heroku)
+wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
+cat appendthis2zshrc >> ~/.zshrc
+rm appendthis2zshrc
 
 
 sudo scutil --set ComputerName "iMac"
@@ -75,7 +55,3 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 chflags nohidden ~/Library
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 for app in "Address Book" "Contacts" "iCal" "Calendar" "Dock" "Finder" "Mail" "Safari" "iTunes" "SystemUIServer" "Terminal" "Twitter"; do killall "$app" > /dev/null 2>&1; done
-
-wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
-cat appendthis2zshrc >> ~/.zshrc
-rm appendthis2zshrc
