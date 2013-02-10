@@ -48,6 +48,8 @@ echo "Installing Homebrew, a good OS X package manager ..."
     # use the version you wish to install
     rbenv install 1.9.3-p385
 
+    echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+
 Install
 -------
 
