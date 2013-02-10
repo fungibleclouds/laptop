@@ -35,6 +35,7 @@ Click [here](https://github.com/account/ssh) to add your keys to github.
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 echo "Installing Homebrew, a good OS X package manager ..."
+
     ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
     brew update
     brew install rbenv
