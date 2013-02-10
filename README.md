@@ -35,17 +35,17 @@ Click [here](https://github.com/account/ssh) to add your keys to github.
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 echo "Installing Homebrew, a good OS X package manager ..."
-  ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
-  brew update
-  brew install rbenv
-  brew install ruby-build
-  brew tap homebrew/dupes
-  # install apple-gcc, only once needed
-  brew install apple-gcc42
-  # this export must be done before every new ruby build
-  export CC=/usr/local/bin/gcc-4.2
-  # use the version you wish to install
-  rbenv install 1.9.3-p385
+    ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
+    brew update
+    brew install rbenv
+    brew install ruby-build
+    brew tap homebrew/dupes
+    # install apple-gcc, only once needed
+    brew install apple-gcc42
+    # this export must be done before every new ruby build
+    export CC=/usr/local/bin/gcc-4.2
+    # use the version you wish to install
+    rbenv install 1.9.3-p385
 
 Install
 -------
