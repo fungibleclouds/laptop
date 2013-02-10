@@ -1,25 +1,7 @@
 #!/usr/bin/env zsh
 
-echo "Installing Simple Ruby Version Management: rbenv ..."
-  curl -L https://raw.github.com/fungibleclouds/laptop/master/rbenv.sh | zsh
-  source ~/.zshenv
-
-echo "Installing ruby-build ..."
-  curl -L https://raw.github.com/fungibleclouds/laptop/master/ruby-build.sh | zsh
-  source ~/.zshenv
-
 echo "Installing apps ..."
   curl -L https://raw.github.com/fungibleclouds/laptop/master/preparation.sh | zsh
-
-echo "Installing Homebrew, a good OS X package manager ..."
-  ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
-  brew update
-
-echo "Put Homebrew location earlier in PATH ..."
-  echo "
-# recommended by brew doctor
-export PATH='/usr/local/bin:$PATH'" >> ~/.zshenv
-  source ~/.zshenv
 
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
@@ -94,6 +76,6 @@ chflags nohidden ~/Library
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 for app in "Address Book" "Contacts" "iCal" "Calendar" "Dock" "Finder" "Mail" "Safari" "iTunes" "SystemUIServer" "Terminal" "Twitter"; do killall "$app" > /dev/null 2>&1; done
 
-wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshenv
-cat appendthis2zshenv >> ~/.zshenv
-rm appendthis2zshenv
+wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
+cat appendthis2zshrc >> ~/.zshrc
+rm appendthis2zshrc
