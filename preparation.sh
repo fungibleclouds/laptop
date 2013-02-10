@@ -17,13 +17,13 @@ hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4.2Update.dmg && 
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4.3Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.4.3/Aperture3.4.3Update.pkg -target /
 
 #Dropbox
-hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.4.12.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
+hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.6.16.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
 
 #Fantastical
 cp -R  /Volumes/store/install/Fantastical.app /Applications/
 
 #gitboxapp
-unzip -qq /Volumes/store/install/gitboxapp\ 162/gitbox-1.6.2.zip  -d /Applications/
+#unzip -qq /Volumes/store/install/gitboxapp\ 162/gitbox-1.6.2.zip  -d /Applications/
 
 #GoogleChrome
 hdiutil mount -quiet /Volumes/store/install/googlechrome.dmg && cp -R /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/ 
@@ -92,7 +92,7 @@ hdiutil mount -quiet /Volumes/store/install/Office2011-1430UpdateEN.dmg  && sudo
 #hdiutil mount -quiet /Volumes/store/install/TextWrangler_4.0.1.dmg && cp -R /Volumes/TextWrangler\ 4.0.1/TextWrangler.app /Applications/
 
 #TextMate
-tar -xzf /Volumes/store/install/TextMate_r9290.tbz && mv TextMate.app /Applications/
+#tar -xzf /Volumes/store/install/TextMate_r9290.tbz && mv TextMate.app /Applications/
 
 #Thinkorswim
 #hdiutil mount -quiet /Volumes/store/install/
