@@ -29,7 +29,7 @@ cp -R  /Volumes/store/install/Fantastical.app /Applications/
 hdiutil mount -quiet /Volumes/store/install/googlechrome.dmg && cp -R /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/ 
 
 #Google Voice and Video
-hdiutil mount -quiet  /Volumes/store/install/GoogleVoiceAndVideoSetup.dmg  && sudo installer -pkg  /Volumes/GoogleVoiceAndVideoAccelSetup_3.3.3.8675/Google\ Voice\ and\ Video.pkg -target /
+hdiutil mount -quiet  /Volumes/store/install/GoogleVoiceAndVideoSetup.dmg  && sudo installer -pkg  /Volumes/GoogleVoiceAndVideoAccelSetup_3.13.2.11592/Google\ Voice\ and\ Video.pkg -target /
 
 #InstallgoogleDrive
 hdiutil mount -quiet /Volumes/store/install/installgoogledrive.dmg && cp -R /Volumes/Install\ Google\ Drive/Google\ Drive.app /Applications/ 
