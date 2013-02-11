@@ -43,12 +43,23 @@ echo "Installing Homebrew, a good OS X package manager ..."
     brew tap homebrew/dupes
     # install apple-gcc, only once needed
     brew install apple-gcc42
+
+    wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
+    cat appendthis2zshrc >> ~/.zshrc
+    rm appendthis2zshrc
+
+    # ensure .zshrc has the local/bin path first
+    # echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
+    echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+    exec $SHELL -l
+
+    source ~/.zshrc
+    rbenv rehash
     # this export must be done before every new ruby build
     export CC=/usr/local/bin/gcc-4.2
     # use the version you wish to install
     rbenv install 1.9.3-p385
-
-    echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+    rbenv global 1.9.3-p385 
 
 Install
 -------

@@ -5,7 +5,8 @@ echo "Installing apps ..."
 
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
-
+  initdb /usr/local/var/postgres -E utf8
+  
 echo "Installing ack, a good way to search through files ..."
   brew install ack
 
@@ -31,11 +32,6 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # usage
 # git lg
 # git lg -p
-
-wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
-cat appendthis2zshrc >> ~/.zshrc
-rm appendthis2zshrc
-
 
 sudo scutil --set ComputerName "iMac"
 sudo scutil --set HostName "iMac"
