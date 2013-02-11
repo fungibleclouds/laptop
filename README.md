@@ -32,7 +32,7 @@ Although optional, its a good idea to have a key pair ready.
     
 Click [here](https://github.com/account/ssh) to add your keys to github.
 
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 echo "Installing Homebrew, a good OS X package manager ..."
 
