@@ -50,8 +50,6 @@ echo "Installing Homebrew, a good OS X package manager ..."
 
     # ensure .zshrc has the local/bin path first
     # echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
-    echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-    exec $SHELL -l
 
     source ~/.zshrc
     rbenv rehash
@@ -60,6 +58,9 @@ echo "Installing Homebrew, a good OS X package manager ..."
     # use the version you wish to install
     rbenv install 1.9.3-p385
     rbenv global 1.9.3-p385 
+
+    echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+    exec $SHELL -l
 
 Install
 -------
