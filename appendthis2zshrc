@@ -1,3 +1,8 @@
+# Customize to your needs...
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+eval "$(rbenv init -)"
+
+
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew doctor'
 

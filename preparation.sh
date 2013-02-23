@@ -1,9 +1,9 @@
 #1password
-unzip -qq /Volumes/store/install/1Password-3.8.20.zip -d /Applications
+#unzip -qq /Volumes/store/install/1Password-3.8.20.zip -d /Applications
 
 #Alfred
 #hdiutil mount -quiet /Volumes/store/install/alfred_1.3.1_261.dmg && cp -R /Volumes/Alfred.app/Alfred.app /Applications/
-unzip -qq /Volumes/store/install/alfred_1.3.2_265.zip  -d /Applications/
+#unzip -qq /Volumes/store/install/alfred_1.3.2_265.zip  -d /Applications/
 
 #Aperture
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.0Trial.dmg && sudo installer -pkg /Volumes/Aperture\ Trial\ 3.0/ApertureTrial.mpkg -target /
@@ -17,7 +17,7 @@ hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4.2Update.dmg && 
 hdiutil mount -quiet /Volumes/store/install/Aperture/Aperture3.4.3Update.dmg && sudo installer -pkg /Volumes/Aperture\ 3.4.3/Aperture3.4.3Update.pkg -target /
 
 #Dropbox
-hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.6.16.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
+#hdiutil mount -quiet /Volumes/store/install/Dropbox\ 1.6.16.dmg && cp -R /Volumes/Dropbox\ Installer/Dropbox.app  /Applications/
 
 #Fantastical
 cp -R  /Volumes/store/install/Fantastical.app /Applications/
@@ -26,7 +26,7 @@ cp -R  /Volumes/store/install/Fantastical.app /Applications/
 #unzip -qq /Volumes/store/install/gitboxapp\ 162/gitbox-1.6.2.zip  -d /Applications/
 
 #GoogleChrome
-hdiutil mount -quiet /Volumes/store/install/googlechrome.dmg && cp -R /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/ 
+#hdiutil mount -quiet /Volumes/store/install/googlechrome.dmg && cp -R /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
 
 #Google Voice and Video
 hdiutil mount -quiet  /Volumes/store/install/GoogleVoiceAndVideoSetup.dmg  && sudo installer -pkg  /Volumes/GoogleVoiceAndVideoAccelSetup_3.13.2.11592/Google\ Voice\ and\ Video.pkg -target /
@@ -107,4 +107,4 @@ hdiutil mount -quiet /Volumes/store/install/Office2011-1430UpdateEN.dmg  && sudo
 #hdiutil mount -quiet /Volumes/store/install/webexmc_intel.dmg && sudo installer -pkg /Volumes/WebEx\ Meeting\ Center.pkg\ 1/WebEx\ Meeting\ Center.pkg -target /
 
 #XQuartz
-hdiutil mount -quiet /Volumes/store/install/XQuartz-2.7.4.dmg && sudo installer -pkg /Volumes/XQuartz-2.7.4/XQuartz.pkg -target /
+#hdiutil mount -quiet /Volumes/store/install/XQuartz-2.7.4.dmg && sudo installer -pkg /Volumes/XQuartz-2.7.4/XQuartz.pkg -target /

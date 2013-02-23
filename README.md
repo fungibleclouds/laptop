@@ -34,6 +34,15 @@ Click [here](https://github.com/account/ssh) to add your keys to github.
 
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+Fix .zshrc
+
+    # ensure .zshrc has the local/bin path first
+    # echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
+
+    wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
+    cat appendthis2zshrc >> ~/.zshrc
+    rm appendthis2zshrc
+
 echo "Installing Homebrew, a good OS X package manager ..."
 
     ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
@@ -43,21 +52,15 @@ echo "Installing Homebrew, a good OS X package manager ..."
     brew tap homebrew/dupes
     # install apple-gcc, only once needed
     brew install apple-gcc42
-
-    wget https://raw.github.com/fungibleclouds/laptop/master/appendthis2zshrc
-    cat appendthis2zshrc >> ~/.zshrc
-    rm appendthis2zshrc
-
-    # ensure .zshrc has the local/bin path first
-    # echo 'export PATH=/usr/local/bin:$PATH' >> ~/.zshrc
-
     source ~/.zshrc
     rbenv rehash
     # this export must be done before every new ruby build
     export CC=/usr/local/bin/gcc-4.2
     # use the version you wish to install
-    rbenv install 1.9.3-p385
-    rbenv global 1.9.3-p385 
+    rbenv install 1.9.3-p392
+    rbenv global 1.9.3-p392 
+
+This is done already when you Fixed .zshrc
 
     echo 'eval "$(rbenv init -)"' >> ~/.zshrc
     exec $SHELL -l
@@ -65,6 +68,10 @@ echo "Installing Homebrew, a good OS X package manager ..."
 Install
 -------
 
-Run the script:
+Install packages from cosmos:
+
+    zsh < <(curl -s https://raw.github.com/fungibleclouds/laptop/master/prepare.sh)
+
+Setup mac specific settings:
 
     zsh < <(curl -s https://raw.github.com/fungibleclouds/laptop/master/mac)
